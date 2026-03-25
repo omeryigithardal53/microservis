@@ -10,7 +10,7 @@ DATABASE_URL=os.getenv(
   ""
 
 def connect_db():
-  return psycopg2.connect(DATABASE_URL)
+  return psycopg2.connect( "postgresql://bulut_proje_user:NwqSCQV8KCfKJmvghYiTAIHp7Xba2Fk6@dpg-d6ttgqshg0os7381hnpg-a.oregon-postgres.render.com/bulut_proje")
 
 @app.route("/ziyaretciler",methods=["GET","POST"])
 def ziyaretciler():
